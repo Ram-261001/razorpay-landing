@@ -1,0 +1,29 @@
+.logos-section {
+  background: #f1f5f9;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.logos-row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.logos-row img {
+  height: 45px;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.logos-row img:hover {
+  opacity: 1;
+}
+
+@media(max-width: 768px) {
+  .logos-section {
+    padding: 40px 20px;
+  }
+}

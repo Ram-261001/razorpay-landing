@@ -1,0 +1,146 @@
+/* ----------------------------------------------------
+   SECTION WRAPPER
+---------------------------------------------------- */
+.product-tabs-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 60px 40px;
+  font-family: "Inter", sans-serif;
+  text-align: center; /* Center title & tabs ONLY */
+}
+
+.tabs-title {
+  font-size: 32px;
+ 	font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+
+/* ----------------------------------------------------
+   TABS ROW
+---------------------------------------------------- */
+.tabs-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 35px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: #475569;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s ease;
+}
+
+.tab-btn.active {
+  color: #2563eb;
+  font-weight: 600;
+  border-bottom: 2px solid #22c55e;
+}
+
+
+/* ----------------------------------------------------
+   PRODUCT GRID
+---------------------------------------------------- */
+.product-grid {
+  display: flex;
+  justify-content: center; /* center all cards */
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+
+/* ----------------------------------------------------
+   PRODUCT CARD
+---------------------------------------------------- */
+.prod-card {
+  background: #f8fafc;
+  width: 270px;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center; /* Text centered */
+  
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+  transition: 0.25s ease;
+  position: relative;
+}
+
+.prod-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
+  background: #eff6ff;
+}
+
+
+/* ----------------------------------------------------
+   CENTER ONLY PRODUCT TABS IMAGES
+---------------------------------------------------- */
+.prod-card img {
+  width: 120px;               /* fixed width for consistency */
+  height: 120px;              /* fixed height */
+  object-fit: contain;        /* avoids stretching */
+
+  display: block;             /* required for centering */
+  margin-left: auto;          /* center horizontally */
+  margin-right: auto;         /* center horizontally */
+
+  margin-bottom: 20px;
+}
+
+
+/* ----------------------------------------------------
+   CARD TEXT
+---------------------------------------------------- */
+.prod-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.prod-card p {
+  color: #475569;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+
+/* ----------------------------------------------------
+   NO CODE TAG
+---------------------------------------------------- */
+.tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #ffffff;
+  color: #2563eb;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+}
+
+
+/* ----------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------- */
+@media (max-width: 768px) {
+  .prod-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .prod-card img {
+    width: 110px;
+    height: 110px;
+  }
+}

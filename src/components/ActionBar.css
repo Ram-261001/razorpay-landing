@@ -1,0 +1,101 @@
+/* Wrapper - centers the banner */
+.top-banner-wrapper {
+  width: 100%;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.top-banner-wrapper {
+  margin-top: 65px;   /* Adjust based on navbar height */
+}
+
+/* Main Banner */
+.top-banner {
+  width: 100%;
+  max-width: 1350px;
+  background: #eef7ff;
+  border-bottom: 1px solid #dbeafe;
+
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Inter", sans-serif;
+}
+
+/* LEFT SIDE */
+.banner-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.banner-left .bold {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 15px;
+}
+
+.banner-left .highlight {
+  font-weight: 600;
+  color: #2563eb;
+  font-size: 15px;
+}
+
+/* MIDDLE */
+.banner-middle {
+  font-size: 15px;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* "Sign Up Now" button styled like link */
+.banner-link-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0;
+}
+
+.banner-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT SIDE ICON */
+.banner-right img {
+  width: 120px;
+  height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .top-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .banner-right img {
+    width: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-middle {
+    font-size: 14px;
+  }
+
+  .banner-left {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
