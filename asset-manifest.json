@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/razorpay-landing/static/css/main.ac936b7b.css",
-    "main.js": "/razorpay-landing/static/js/main.d320e0e4.js",
+    "main.js": "/razorpay-landing/static/js/main.fedb20b8.js",
     "index.html": "/razorpay-landing/index.html",
     "main.ac936b7b.css.map": "/razorpay-landing/static/css/main.ac936b7b.css.map",
-    "main.d320e0e4.js.map": "/razorpay-landing/static/js/main.d320e0e4.js.map"
+    "main.fedb20b8.js.map": "/razorpay-landing/static/js/main.fedb20b8.js.map"
   },
   "entrypoints": [
     "static/css/main.ac936b7b.css",
-    "static/js/main.d320e0e4.js"
+    "static/js/main.fedb20b8.js"
   ]
 }
